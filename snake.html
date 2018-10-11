@@ -7,6 +7,21 @@
 
 <body>
 <canvas id="gameCanvas" width="300" height="300"></canvas>
+
+<script>
+
+    const canvasBorderColor = "black";
+    const canvasBackgroundColor = "white";
+    var gameCanvas = document.getElementById("gameCanvas");
+    var ctx = gameCanvas.getContext("2d");
+    
+    ctx.fillStyle = canvasBackgroundColor;
+    ctx.strokeStyle = canvasBorderColor;
+    ctx.fillRect(0, 0, gameCanvas.width, gameCanvas.height);
+    ctx.strokeRect(0, 0, gameCanvas.width, gameCanvas.height);
+
+</script>
+
 </body>
 
 </html>
